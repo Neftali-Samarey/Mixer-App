@@ -61,13 +61,37 @@
 				EDB3624D27FA2063000A8BE7 /* AppDelegate.swift */,
 				EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */,
 				EDB3625127FA2063000A8BE7 /* ViewController.swift */,
+				EDB3626627FA2492000A8BE7 /* Assets */,
+				EDB3626527FA2483000A8BE7 /* Screens */,
+				EDB3626427FA23B0000A8BE7 /* Network */,
 				EDB3625327FA2063000A8BE7 /* Main.storyboard */,
-				EDB3625927FA2065000A8BE7 /* Assets.xcassets */,
 				EDB3625B27FA2065000A8BE7 /* LaunchScreen.storyboard */,
 				EDB3625E27FA2065000A8BE7 /* Info.plist */,
 				EDB3625627FA2063000A8BE7 /* Mixer.xcdatamodeld */,
 			);
 			path = Mixer;
+			sourceTree = "<group>";
+		};
+		EDB3626427FA23B0000A8BE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EDB3626527FA2483000A8BE7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EDB3626627FA2492000A8BE7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3625927FA2065000A8BE7 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
