@@ -7,5 +7,6 @@ target 'Mixer' do
 
   # Pods for Mixer
   pod 'Alamofire'
+  pod 'SkeletonView'
 
 end
