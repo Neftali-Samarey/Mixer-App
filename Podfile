@@ -6,5 +6,6 @@ target 'Mixer' do
   use_frameworks!
 
   # Pods for Mixer
+  pod 'Alamofire'
 
 end
