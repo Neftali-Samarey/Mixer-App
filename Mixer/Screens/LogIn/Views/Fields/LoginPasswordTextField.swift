@@ -15,7 +15,7 @@ class LoginPasswordTextField: TextField {
         self.placeholderText = "Enter your password"
         self.fieldIsSecure = true
         self.fieldBackgroundColor = .white
-        self.fieldBorderColor = UIColor.orange.cgColor
+        self.fieldBorderColor = UIColor.gray.cgColor
         self.fieldCornerRadius = 8
         self.fieldBorderWidth = 1
     }

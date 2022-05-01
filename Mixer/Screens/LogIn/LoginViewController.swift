@@ -51,6 +51,8 @@ class LoginViewController: UIViewController {
             return
         }
 
+        tempHideImage()
+
         isKeyboardRaised = !isKeyboardRaised
 
         fieldBottomLayoutConstrain?.isActive = false
@@ -59,6 +61,18 @@ class LoginViewController: UIViewController {
             self.fieldCenterYaLayoutConstrain?.constant = 0
             self.fieldCenterYaLayoutConstrain?.isActive = true
             self.view.layoutIfNeeded()
+        }
+    }
+
+    func tempHideImage() {
+        UIView.animate(withDuration: 0.4) {
+            self.imageView.layer.opacity = 0
+        }
+    }
+
+    func tempShowImage() {
+        UIView.animate(withDuration: 0.4) {
+            self.imageView.layer.opacity = 1.0
         }
     }
 
@@ -144,6 +158,7 @@ class LoginViewController: UIViewController {
 
     private func lightweightReset() {
         isKeyboardRaised = false
+        tempShowImage()
         if !isKeyboardRaised {
             fieldCenterYaLayoutConstrain?.isActive = false
 
