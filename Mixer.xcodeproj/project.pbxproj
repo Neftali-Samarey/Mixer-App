@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		25A529EBDA9805AC8B8FD3CF /* Pods_Mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE7A4390536F575576F90C8 /* Pods_Mixer.framework */; };
+		ED798F9B281BCB04000842F0 /* KeyboardStateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */; };
+		ED798F9D281C6F21000842F0 /* LoginPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */; };
+		EDAA6FF72815F92400DC6A4A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA6FF62815F92400DC6A4A /* OnboardingViewController.swift */; };
+		EDAA6FFA2817408D00DC6A4A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA6FF92817408D00DC6A4A /* WelcomeView.swift */; };
+		EDAA6FFD2818EBB900DC6A4A /* MixerOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA6FFC2818EBB900DC6A4A /* MixerOnboardingViewController.swift */; };
+		EDAA6FFF281908CF00DC6A4A /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA6FFE281908CE00DC6A4A /* OnboardingViewModel.swift */; };
+		EDAA70022819096B00DC6A4A /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA70012819096B00DC6A4A /* OnboardingModel.swift */; };
+		EDAA7005281B338300DC6A4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA7004281B338300DC6A4A /* LoginViewController.swift */; };
+		EDAA7009281B8E9900DC6A4A /* LoginFormStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA7008281B8E9900DC6A4A /* LoginFormStackView.swift */; };
+		EDAA700C281B913F00DC6A4A /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA700B281B913F00DC6A4A /* TextField.swift */; };
+		EDAA700F281B92E400DC6A4A /* LoginHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA700E281B92E400DC6A4A /* LoginHeaderLabel.swift */; };
+		EDAA7012281BB5E000DC6A4A /* LoginEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAA7011281BB5E000DC6A4A /* LoginEmailTextField.swift */; };
 		EDB3624E27FA2063000A8BE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3624D27FA2063000A8BE7 /* AppDelegate.swift */; };
 		EDB3625027FA2063000A8BE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */; };
 		EDB3625227FA2063000A8BE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3625127FA2063000A8BE7 /* ViewController.swift */; };
@@ -15,12 +27,29 @@
 		EDB3625827FA2063000A8BE7 /* Mixer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDB3625627FA2063000A8BE7 /* Mixer.xcdatamodeld */; };
 		EDB3625A27FA2065000A8BE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3625927FA2065000A8BE7 /* Assets.xcassets */; };
 		EDB3625D27FA2065000A8BE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB3625B27FA2065000A8BE7 /* LaunchScreen.storyboard */; };
+		EDB3626927FAA69E000A8BE7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3626827FAA69D000A8BE7 /* Coordinator.swift */; };
+		EDB3626C27FAA788000A8BE7 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3626B27FAA788000A8BE7 /* TypeAlias.swift */; };
+		EDB3626E27FAA7C0000A8BE7 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3626D27FAA7C0000A8BE7 /* NavigationCoordinator.swift */; };
+		EDB3627127FAA8AD000A8BE7 /* NotificationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3627027FAA8AD000A8BE7 /* NotificationObservable.swift */; };
+		EDB3627527FAAA52000A8BE7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3627427FAAA52000A8BE7 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29AD3A8EF3E3557E06FC575D /* Pods-Mixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixer.debug.xcconfig"; path = "Target Support Files/Pods-Mixer/Pods-Mixer.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE7A4390536F575576F90C8 /* Pods_Mixer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mixer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C522F8B12A7C8B8D71046A5 /* Pods-Mixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixer.release.xcconfig"; path = "Target Support Files/Pods-Mixer/Pods-Mixer.release.xcconfig"; sourceTree = "<group>"; };
+		ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStateListener.swift; sourceTree = "<group>"; };
+		ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordTextField.swift; sourceTree = "<group>"; };
+		EDAA6FF62815F92400DC6A4A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EDAA6FF92817408D00DC6A4A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EDAA6FFC2818EBB900DC6A4A /* MixerOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerOnboardingViewController.swift; sourceTree = "<group>"; };
+		EDAA6FFE281908CE00DC6A4A /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		EDAA70012819096B00DC6A4A /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		EDAA7004281B338300DC6A4A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EDAA7008281B8E9900DC6A4A /* LoginFormStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginFormStackView.swift; path = Mixer/Screens/LogIn/Views/StackViews/LoginFormStackView.swift; sourceTree = SOURCE_ROOT; };
+		EDAA700B281B913F00DC6A4A /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		EDAA700E281B92E400DC6A4A /* LoginHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderLabel.swift; sourceTree = "<group>"; };
+		EDAA7011281BB5E000DC6A4A /* LoginEmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailTextField.swift; sourceTree = "<group>"; };
 		EDB3624A27FA2062000A8BE7 /* Mixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3624D27FA2063000A8BE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +59,11 @@
 		EDB3625927FA2065000A8BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB3625C27FA2065000A8BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB3625E27FA2065000A8BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB3626827FAA69D000A8BE7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EDB3626B27FAA788000A8BE7 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		EDB3626D27FAA7C0000A8BE7 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		EDB3627027FAA8AD000A8BE7 /* NotificationObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObservable.swift; sourceTree = "<group>"; };
+		EDB3627427FAAA52000A8BE7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +84,6 @@
 				29AD3A8EF3E3557E06FC575D /* Pods-Mixer.debug.xcconfig */,
 				5C522F8B12A7C8B8D71046A5 /* Pods-Mixer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,6 +93,102 @@
 				3DE7A4390536F575576F90C8 /* Pods_Mixer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDAA6FF52815F90D00DC6A4A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA70002819095500DC6A4A /* Model */,
+				EDAA6FFC2818EBB900DC6A4A /* MixerOnboardingViewController.swift */,
+				EDAA6FF62815F92400DC6A4A /* OnboardingViewController.swift */,
+				EDAA6FF82817408200DC6A4A /* Views */,
+				EDAA6FFE281908CE00DC6A4A /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EDAA6FF82817408200DC6A4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA6FF92817408D00DC6A4A /* WelcomeView.swift */,
+				EDAA6FFB2817412100DC6A4A /* Labels */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDAA6FFB2817412100DC6A4A /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		EDAA70002819095500DC6A4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA70012819096B00DC6A4A /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDAA7003281B335B00DC6A4A /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA7004281B338300DC6A4A /* LoginViewController.swift */,
+				EDAA7006281B8E6D00DC6A4A /* Views */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		EDAA7006281B8E6D00DC6A4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA700D281B92CA00DC6A4A /* Labels */,
+				EDAA700A281B90F400DC6A4A /* Fields */,
+				EDAA7007281B8E7400DC6A4A /* StackViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDAA7007281B8E7400DC6A4A /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA7008281B8E9900DC6A4A /* LoginFormStackView.swift */,
+			);
+			path = StackViews;
+			sourceTree = "<group>";
+		};
+		EDAA700A281B90F400DC6A4A /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA7011281BB5E000DC6A4A /* LoginEmailTextField.swift */,
+				ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		EDAA700D281B92CA00DC6A4A /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA700E281B92E400DC6A4A /* LoginHeaderLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		EDAA7010281BB59B00DC6A4A /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				EDAA700B281B913F00DC6A4A /* TextField.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		EDAA7013281BCA6100DC6A4A /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 		EDB3624127FA2062000A8BE7 = {
@@ -86,6 +215,10 @@
 				EDB3624D27FA2063000A8BE7 /* AppDelegate.swift */,
 				EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */,
 				EDB3625127FA2063000A8BE7 /* ViewController.swift */,
+				EDAA7013281BCA6100DC6A4A /* Singleton */,
+				EDAA7010281BB59B00DC6A4A /* Inputs */,
+				EDB3627227FAA9F9000A8BE7 /* MixerCore */,
+				EDB3626727FAA675000A8BE7 /* Core */,
 				EDB3626627FA2492000A8BE7 /* Assets */,
 				EDB3626527FA2483000A8BE7 /* Screens */,
 				EDB3626427FA23B0000A8BE7 /* Network */,
@@ -107,6 +240,8 @@
 		EDB3626527FA2483000A8BE7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EDAA7003281B335B00DC6A4A /* LogIn */,
+				EDAA6FF52815F90D00DC6A4A /* Onboarding */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -117,6 +252,49 @@
 				EDB3625927FA2065000A8BE7 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		EDB3626727FAA675000A8BE7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3626B27FAA788000A8BE7 /* TypeAlias.swift */,
+				EDB3626F27FAA897000A8BE7 /* Protocols */,
+				EDB3626A27FAA778000A8BE7 /* Coordinator */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EDB3626A27FAA778000A8BE7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3626827FAA69D000A8BE7 /* Coordinator.swift */,
+				EDB3626D27FAA7C0000A8BE7 /* NavigationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EDB3626F27FAA897000A8BE7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3627027FAA8AD000A8BE7 /* NotificationObservable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EDB3627227FAA9F9000A8BE7 /* MixerCore */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3627327FAAA0F000A8BE7 /* Coordinators */,
+			);
+			path = MixerCore;
+			sourceTree = "<group>";
+		};
+		EDB3627327FAAA0F000A8BE7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3627427FAAA52000A8BE7 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +412,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAA7012281BB5E000DC6A4A /* LoginEmailTextField.swift in Sources */,
+				EDAA700C281B913F00DC6A4A /* TextField.swift in Sources */,
+				ED798F9B281BCB04000842F0 /* KeyboardStateListener.swift in Sources */,
+				EDB3626C27FAA788000A8BE7 /* TypeAlias.swift in Sources */,
+				EDAA7009281B8E9900DC6A4A /* LoginFormStackView.swift in Sources */,
+				EDAA6FFD2818EBB900DC6A4A /* MixerOnboardingViewController.swift in Sources */,
 				EDB3625227FA2063000A8BE7 /* ViewController.swift in Sources */,
+				EDAA7005281B338300DC6A4A /* LoginViewController.swift in Sources */,
+				ED798F9D281C6F21000842F0 /* LoginPasswordTextField.swift in Sources */,
 				EDB3624E27FA2063000A8BE7 /* AppDelegate.swift in Sources */,
+				EDAA70022819096B00DC6A4A /* OnboardingModel.swift in Sources */,
+				EDB3627127FAA8AD000A8BE7 /* NotificationObservable.swift in Sources */,
+				EDB3626927FAA69E000A8BE7 /* Coordinator.swift in Sources */,
+				EDAA6FFF281908CF00DC6A4A /* OnboardingViewModel.swift in Sources */,
+				EDAA700F281B92E400DC6A4A /* LoginHeaderLabel.swift in Sources */,
 				EDB3625027FA2063000A8BE7 /* SceneDelegate.swift in Sources */,
+				EDAA6FFA2817408D00DC6A4A /* WelcomeView.swift in Sources */,
 				EDB3625827FA2063000A8BE7 /* Mixer.xcdatamodeld in Sources */,
+				EDAA6FF72815F92400DC6A4A /* OnboardingViewController.swift in Sources */,
+				EDB3627527FAAA52000A8BE7 /* MainCoordinator.swift in Sources */,
+				EDB3626E27FAA7C0000A8BE7 /* NavigationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
