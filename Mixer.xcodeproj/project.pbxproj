@@ -10,6 +10,7 @@
 		25A529EBDA9805AC8B8FD3CF /* Pods_Mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE7A4390536F575576F90C8 /* Pods_Mixer.framework */; };
 		ED798F9B281BCB04000842F0 /* KeyboardStateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */; };
 		ED798F9D281C6F21000842F0 /* LoginPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */; };
+		ED798FAF2820CDD1000842F0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FAE2820CDD0000842F0 /* Label.swift */; };
 		ED9AFBB8281E327B00CF2117 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB4281E327B00CF2117 /* Inter-Medium.ttf */; };
 		ED9AFBB9281E327B00CF2117 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB5281E327B00CF2117 /* Inter-Regular.ttf */; };
 		ED9AFBBA281E327B00CF2117 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB6281E327B00CF2117 /* Inter-SemiBold.ttf */; };
@@ -45,6 +46,7 @@
 		5C522F8B12A7C8B8D71046A5 /* Pods-Mixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mixer.release.xcconfig"; path = "Target Support Files/Pods-Mixer/Pods-Mixer.release.xcconfig"; sourceTree = "<group>"; };
 		ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStateListener.swift; sourceTree = "<group>"; };
 		ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordTextField.swift; sourceTree = "<group>"; };
+		ED798FAE2820CDD0000842F0 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		ED9AFBB4281E327B00CF2117 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		ED9AFBB5281E327B00CF2117 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		ED9AFBB6281E327B00CF2117 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -103,6 +105,23 @@
 				3DE7A4390536F575576F90C8 /* Pods_Mixer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED798FAC2820CDB3000842F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FAD2820CDBF000842F0 /* Labels */,
+				EDAA7010281BB59B00DC6A4A /* Inputs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED798FAD2820CDBF000842F0 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FAE2820CDD0000842F0 /* Label.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 		ED9AFBB3281E325C00CF2117 /* Fonts */ = {
@@ -237,9 +256,9 @@
 				EDB3624D27FA2063000A8BE7 /* AppDelegate.swift */,
 				EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */,
 				EDB3625127FA2063000A8BE7 /* ViewController.swift */,
+				ED798FAC2820CDB3000842F0 /* Views */,
 				ED9AFBB3281E325C00CF2117 /* Fonts */,
 				EDAA7013281BCA6100DC6A4A /* Singleton */,
-				EDAA7010281BB59B00DC6A4A /* Inputs */,
 				EDB3627227FAA9F9000A8BE7 /* MixerCore */,
 				EDB3626727FAA675000A8BE7 /* Core */,
 				EDB3626627FA2492000A8BE7 /* Assets */,
@@ -444,6 +463,7 @@
 				EDAA700C281B913F00DC6A4A /* TextField.swift in Sources */,
 				ED798F9B281BCB04000842F0 /* KeyboardStateListener.swift in Sources */,
 				EDB3626C27FAA788000A8BE7 /* TypeAlias.swift in Sources */,
+				ED798FAF2820CDD1000842F0 /* Label.swift in Sources */,
 				EDAA7009281B8E9900DC6A4A /* LoginFormStackView.swift in Sources */,
 				EDAA6FFD2818EBB900DC6A4A /* MixerOnboardingViewController.swift in Sources */,
 				EDB3625227FA2063000A8BE7 /* ViewController.swift in Sources */,

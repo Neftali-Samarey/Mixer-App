@@ -27,7 +27,7 @@ class LoginFormStackView: UIStackView {
     func initialize() {
         self.translatesAutoresizingMaskIntoConstraints = false
 
-        loginFieldStackLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
+        loginFieldStackLabel.heightAnchor.constraint(equalToConstant: 18).isActive = true
         emailField.heightAnchor.constraint(equalToConstant: 45).isActive = true
         passwordField.heightAnchor.constraint(equalToConstant: 45).isActive = true
 
@@ -37,7 +37,7 @@ class LoginFormStackView: UIStackView {
     }
 
     private func configureStackView() {
-        self.spacing = 10
+        self.spacing = 7
         self.axis = .vertical
         self.distribution = .fill
     }

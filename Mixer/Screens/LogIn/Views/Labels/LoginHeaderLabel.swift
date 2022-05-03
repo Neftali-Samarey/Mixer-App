@@ -7,10 +7,10 @@
 
 import UIKit
 
-class LoginHeaderLabel: UILabel {
+class LoginHeaderLabel: Label {
 
-    init() {
-        super.init(frame: .zero)
+    override init() {
+        super.init()
 
         initialize()
 
@@ -23,5 +23,6 @@ class LoginHeaderLabel: UILabel {
 
     private func initialize() {
         translatesAutoresizingMaskIntoConstraints = false
+        font = UIFont(name: "Inter-SemiBold", size: 16.0)
     }
 }
