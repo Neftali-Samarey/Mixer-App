@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
                 // iOS 15+ specific UI stylings
                 appearance.backgroundColor = UIColor.white
-                appearance.stackedLayoutAppearance.normal.iconColor = UIColor(hex: "edc2a4")
+                appearance.stackedLayoutAppearance.normal.iconColor = UIColor(hex: "FFB580")
                 appearance.stackedLayoutAppearance.selected.iconColor = UIColor(hex: "FF6B00")
                 UITabBar.appearance().standardAppearance = appearance
                 UITabBar.appearance().scrollEdgeAppearance = UITabBar.appearance().standardAppearance

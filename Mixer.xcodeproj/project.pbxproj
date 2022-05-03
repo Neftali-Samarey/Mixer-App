@@ -11,6 +11,9 @@
 		ED798F9B281BCB04000842F0 /* KeyboardStateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */; };
 		ED798F9D281C6F21000842F0 /* LoginPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */; };
 		ED798FAF2820CDD1000842F0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FAE2820CDD0000842F0 /* Label.swift */; };
+		ED798FB128210FCC000842F0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FB028210FCC000842F0 /* RootViewController.swift */; };
+		ED798FB428211402000842F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FB328211402000842F0 /* ProfileViewController.swift */; };
+		ED798FB7282116D8000842F0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FB6282116D8000842F0 /* UIColor+Extensions.swift */; };
 		ED9AFBB8281E327B00CF2117 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB4281E327B00CF2117 /* Inter-Medium.ttf */; };
 		ED9AFBB9281E327B00CF2117 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB5281E327B00CF2117 /* Inter-Regular.ttf */; };
 		ED9AFBBA281E327B00CF2117 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB6281E327B00CF2117 /* Inter-SemiBold.ttf */; };
@@ -47,6 +50,9 @@
 		ED798F9A281BCB04000842F0 /* KeyboardStateListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStateListener.swift; sourceTree = "<group>"; };
 		ED798F9C281C6F21000842F0 /* LoginPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordTextField.swift; sourceTree = "<group>"; };
 		ED798FAE2820CDD0000842F0 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		ED798FB028210FCC000842F0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ED798FB328211402000842F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ED798FB6282116D8000842F0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		ED9AFBB4281E327B00CF2117 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		ED9AFBB5281E327B00CF2117 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		ED9AFBB6281E327B00CF2117 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -122,6 +128,22 @@
 				ED798FAE2820CDD0000842F0 /* Label.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		ED798FB2282113EE000842F0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FB328211402000842F0 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		ED798FB528211655000842F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FB6282116D8000842F0 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ED9AFBB3281E325C00CF2117 /* Fonts */ = {
@@ -256,6 +278,8 @@
 				EDB3624D27FA2063000A8BE7 /* AppDelegate.swift */,
 				EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */,
 				EDB3625127FA2063000A8BE7 /* ViewController.swift */,
+				ED798FB028210FCC000842F0 /* RootViewController.swift */,
+				ED798FB528211655000842F0 /* Extensions */,
 				ED798FAC2820CDB3000842F0 /* Views */,
 				ED9AFBB3281E325C00CF2117 /* Fonts */,
 				EDAA7013281BCA6100DC6A4A /* Singleton */,
@@ -282,6 +306,7 @@
 		EDB3626527FA2483000A8BE7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ED798FB2282113EE000842F0 /* Profile */,
 				EDAA7003281B335B00DC6A4A /* LogIn */,
 				EDAA6FF52815F90D00DC6A4A /* Onboarding */,
 			);
@@ -465,12 +490,15 @@
 				EDB3626C27FAA788000A8BE7 /* TypeAlias.swift in Sources */,
 				ED798FAF2820CDD1000842F0 /* Label.swift in Sources */,
 				EDAA7009281B8E9900DC6A4A /* LoginFormStackView.swift in Sources */,
+				ED798FB428211402000842F0 /* ProfileViewController.swift in Sources */,
 				EDAA6FFD2818EBB900DC6A4A /* MixerOnboardingViewController.swift in Sources */,
 				EDB3625227FA2063000A8BE7 /* ViewController.swift in Sources */,
 				EDAA7005281B338300DC6A4A /* LoginViewController.swift in Sources */,
 				ED798F9D281C6F21000842F0 /* LoginPasswordTextField.swift in Sources */,
+				ED798FB7282116D8000842F0 /* UIColor+Extensions.swift in Sources */,
 				EDB3624E27FA2063000A8BE7 /* AppDelegate.swift in Sources */,
 				EDAA70022819096B00DC6A4A /* OnboardingModel.swift in Sources */,
+				ED798FB128210FCC000842F0 /* RootViewController.swift in Sources */,
 				EDB3627127FAA8AD000A8BE7 /* NotificationObservable.swift in Sources */,
 				EDB3626927FAA69E000A8BE7 /* Coordinator.swift in Sources */,
 				EDAA6FFF281908CF00DC6A4A /* OnboardingViewModel.swift in Sources */,
@@ -635,7 +663,6 @@
 				INFOPLIST_FILE = Mixer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -664,7 +691,6 @@
 				INFOPLIST_FILE = Mixer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
