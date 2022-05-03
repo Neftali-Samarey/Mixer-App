@@ -14,7 +14,7 @@ class LoginEmailTextField: TextField {
 
         self.placeholderText = "Enter your email"
         self.fieldBackgroundColor = .white
-        self.fieldBorderColor = UIColor.gray.cgColor
+        self.fieldBorderColor = UIColor.lightGray.cgColor
         self.fieldCornerRadius = 8
         self.fieldBorderWidth = 1
     }

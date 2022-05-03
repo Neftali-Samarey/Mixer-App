@@ -13,9 +13,16 @@ class LoginViewController: UIViewController {
     var centerYLayoutConstrain: NSLayoutConstraint?
     var fieldCenterYaLayoutConstrain: NSLayoutConstraint?
     var fieldBottomLayoutConstrain: NSLayoutConstraint?
-    var imageViewOpacity: Float?
 
     var isKeyboardRaised: Bool = false
+
+    var logoImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+
+        return imageView
+    }()
 
     var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -30,6 +37,7 @@ class LoginViewController: UIViewController {
 
         imageView.layer.opacity = 0.0
 
+        configureLogoImageView()
         configureImageView()
         configureFieldsView()
 
@@ -47,11 +55,7 @@ class LoginViewController: UIViewController {
 
     @objc
     private func updateFieldViewLayout() {
-        guard var imageViewOpacity = imageViewOpacity else {
-            return
-        }
-
-        tempHideImage()
+        hideBackgroundImage()
 
         isKeyboardRaised = !isKeyboardRaised
 
@@ -61,18 +65,6 @@ class LoginViewController: UIViewController {
             self.fieldCenterYaLayoutConstrain?.constant = 0
             self.fieldCenterYaLayoutConstrain?.isActive = true
             self.view.layoutIfNeeded()
-        }
-    }
-
-    func tempHideImage() {
-        UIView.animate(withDuration: 0.4) {
-            self.imageView.layer.opacity = 0
-        }
-    }
-
-    func tempShowImage() {
-        UIView.animate(withDuration: 0.4) {
-            self.imageView.layer.opacity = 1.0
         }
     }
 
@@ -88,17 +80,6 @@ class LoginViewController: UIViewController {
         }
     }
 
-//    @objc
-//    func animateBackgroundImage() {
-//        self.centerYLayoutConstrain?.isActive = false
-//
-//        UIView.animate(withDuration: 0.3) {
-//            self.centerYLayoutConstrain?.constant = 0
-//            self.centerYLayoutConstrain?.isActive = true
-//            self.view.layoutIfNeeded()
-//        }
-//    }
-
     private func configureFieldsView() {
         view.addSubview(stackView)
 
@@ -108,7 +89,20 @@ class LoginViewController: UIViewController {
         fieldCenterYaLayoutConstrain = stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         fieldBottomLayoutConstrain = stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -150)
         fieldBottomLayoutConstrain?.isActive = true
-        // stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -150).isActive = true
+    }
+
+    private func configureLogoImageView() {
+        guard let image = UIImage(named: "LoginScreenLogo") else {
+            return
+        }
+
+        view.addSubview(logoImageView)
+        logoImageView.image = image
+
+        logoImageView.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        logoImageView.widthAnchor.constraint(equalToConstant: 235).isActive = true
+        logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
     }
 
 
@@ -123,10 +117,8 @@ class LoginViewController: UIViewController {
 
         UIView.animate(withDuration: 0.3, delay: 0.5, options: .curveEaseIn) {
             self.imageView.layer.opacity = 1.0
-            self.imageViewOpacity = self.imageView.layer.opacity
 
             self.centerYLayoutConstrain = self.imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
-            /// self.imageView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0).isActive = true
             self.imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
             self.imageView.heightAnchor.constraint(equalToConstant: self.view.bounds.height / 2).isActive = true
             self.centerYLayoutConstrain?.isActive = false
@@ -138,6 +130,7 @@ class LoginViewController: UIViewController {
             }
         }
 
+        view.bringSubviewToFront(logoImageView)
     }
 
     @objc
@@ -158,7 +151,9 @@ class LoginViewController: UIViewController {
 
     private func lightweightReset() {
         isKeyboardRaised = false
-        tempShowImage()
+
+        showBackgroundImage()
+
         if !isKeyboardRaised {
             fieldCenterYaLayoutConstrain?.isActive = false
 
@@ -167,6 +162,19 @@ class LoginViewController: UIViewController {
                 self.fieldBottomLayoutConstrain?.isActive = true
                 self.view.layoutIfNeeded()
             }
+        }
+    }
+
+    // MARK: - Animation
+    func hideBackgroundImage() {
+        UIView.animate(withDuration: 0.4) {
+            self.imageView.layer.opacity = 0
+        }
+    }
+
+    func showBackgroundImage() {
+        UIView.animate(withDuration: 0.4) {
+            self.imageView.layer.opacity = 1.0
         }
     }
 }
