@@ -14,6 +14,10 @@
 		ED798FB128210FCC000842F0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FB028210FCC000842F0 /* RootViewController.swift */; };
 		ED798FB428211402000842F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FB328211402000842F0 /* ProfileViewController.swift */; };
 		ED798FB7282116D8000842F0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FB6282116D8000842F0 /* UIColor+Extensions.swift */; };
+		ED798FDA2821BEA8000842F0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FD92821BEA8000842F0 /* BaseViewController.swift */; };
+		ED798FDD2821CAD4000842F0 /* ProfileViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FDC2821CAD4000842F0 /* ProfileViewCoordinator.swift */; };
+		ED798FDF2821CAF6000842F0 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FDE2821CAF5000842F0 /* ProfileCoordinator.swift */; };
+		ED798FE32821D06D000842F0 /* ProfileViewStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED798FE22821D06D000842F0 /* ProfileViewStackView.swift */; };
 		ED9AFBB8281E327B00CF2117 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB4281E327B00CF2117 /* Inter-Medium.ttf */; };
 		ED9AFBB9281E327B00CF2117 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB5281E327B00CF2117 /* Inter-Regular.ttf */; };
 		ED9AFBBA281E327B00CF2117 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED9AFBB6281E327B00CF2117 /* Inter-SemiBold.ttf */; };
@@ -53,6 +57,10 @@
 		ED798FB028210FCC000842F0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		ED798FB328211402000842F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ED798FB6282116D8000842F0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		ED798FD92821BEA8000842F0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ED798FDC2821CAD4000842F0 /* ProfileViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCoordinator.swift; sourceTree = "<group>"; };
+		ED798FDE2821CAF5000842F0 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		ED798FE22821D06D000842F0 /* ProfileViewStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewStackView.swift; sourceTree = "<group>"; };
 		ED9AFBB4281E327B00CF2117 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		ED9AFBB5281E327B00CF2117 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		ED9AFBB6281E327B00CF2117 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -134,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				ED798FB328211402000842F0 /* ProfileViewController.swift */,
+				ED798FDB2821CABD000842F0 /* Coordinators */,
+				ED798FE02821D04A000842F0 /* Views */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -144,6 +154,39 @@
 				ED798FB6282116D8000842F0 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED798FD82821BE75000842F0 /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FD92821BEA8000842F0 /* BaseViewController.swift */,
+			);
+			path = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		ED798FDB2821CABD000842F0 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FDE2821CAF5000842F0 /* ProfileCoordinator.swift */,
+				ED798FDC2821CAD4000842F0 /* ProfileViewCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		ED798FE02821D04A000842F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FE12821D052000842F0 /* StackViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED798FE12821D052000842F0 /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				ED798FE22821D06D000842F0 /* ProfileViewStackView.swift */,
+			);
+			path = StackViews;
 			sourceTree = "<group>";
 		};
 		ED9AFBB3281E325C00CF2117 /* Fonts */ = {
@@ -279,6 +322,7 @@
 				EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */,
 				EDB3625127FA2063000A8BE7 /* ViewController.swift */,
 				ED798FB028210FCC000842F0 /* RootViewController.swift */,
+				ED798FD82821BE75000842F0 /* Base Controllers */,
 				ED798FB528211655000842F0 /* Extensions */,
 				ED798FAC2820CDB3000842F0 /* Views */,
 				ED9AFBB3281E325C00CF2117 /* Fonts */,
@@ -492,11 +536,13 @@
 				EDAA7009281B8E9900DC6A4A /* LoginFormStackView.swift in Sources */,
 				ED798FB428211402000842F0 /* ProfileViewController.swift in Sources */,
 				EDAA6FFD2818EBB900DC6A4A /* MixerOnboardingViewController.swift in Sources */,
+				ED798FDF2821CAF6000842F0 /* ProfileCoordinator.swift in Sources */,
 				EDB3625227FA2063000A8BE7 /* ViewController.swift in Sources */,
 				EDAA7005281B338300DC6A4A /* LoginViewController.swift in Sources */,
 				ED798F9D281C6F21000842F0 /* LoginPasswordTextField.swift in Sources */,
 				ED798FB7282116D8000842F0 /* UIColor+Extensions.swift in Sources */,
 				EDB3624E27FA2063000A8BE7 /* AppDelegate.swift in Sources */,
+				ED798FDA2821BEA8000842F0 /* BaseViewController.swift in Sources */,
 				EDAA70022819096B00DC6A4A /* OnboardingModel.swift in Sources */,
 				ED798FB128210FCC000842F0 /* RootViewController.swift in Sources */,
 				EDB3627127FAA8AD000A8BE7 /* NotificationObservable.swift in Sources */,
@@ -504,7 +550,9 @@
 				EDAA6FFF281908CF00DC6A4A /* OnboardingViewModel.swift in Sources */,
 				EDAA700F281B92E400DC6A4A /* LoginHeaderLabel.swift in Sources */,
 				EDB3625027FA2063000A8BE7 /* SceneDelegate.swift in Sources */,
+				ED798FE32821D06D000842F0 /* ProfileViewStackView.swift in Sources */,
 				EDAA6FFA2817408D00DC6A4A /* WelcomeView.swift in Sources */,
+				ED798FDD2821CAD4000842F0 /* ProfileViewCoordinator.swift in Sources */,
 				EDB3625827FA2063000A8BE7 /* Mixer.xcdatamodeld in Sources */,
 				EDAA6FF72815F92400DC6A4A /* OnboardingViewController.swift in Sources */,
 				EDB3627527FAAA52000A8BE7 /* MainCoordinator.swift in Sources */,
