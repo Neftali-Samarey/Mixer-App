@@ -13,17 +13,37 @@ class RootViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.delegate = self
     }
-    
 
-    /*
-    // MARK: - Navigation
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        view.backgroundColor = .white
+
+        let dateViewController = ViewController()
+        let tabBarItemOne = UITabBarItem(title: nil, image: UIImage(named: "tabBar-selected-martini"), selectedImage: UIImage(named: "tabBar-selected-martini"))
+
+        dateViewController.tabBarItem = tabBarItemOne
+
+        let profileViewController = ProfileViewController()
+        let profileViewItem = UITabBarItem(title: nil, image: UIImage(named: "tabBar-unselected-person"), selectedImage: UIImage(named: "tabBar-selected-person"))
+
+        let navigationBar = UINavigationController(rootViewController: profileViewController)
+        navigationBar.navigationBar.prefersLargeTitles = true
+        // navigationBar.navigationItem.rightBarButtonItem = 
+        profileViewController.tabBarItem = profileViewItem
+
+        self.viewControllers = [navigationBar, dateViewController]
     }
-    */
+}
 
+extension RootViewController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        guard let title = viewController.title else {
+            return
+        }
+
+        print("Selected \(title)")
+    }
 }
