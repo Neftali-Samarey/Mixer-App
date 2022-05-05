@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        showLoginScreen()
-
         view.addSubview(beginOnboardingButton)
 
         beginOnboardingButton.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 100).isActive = true
