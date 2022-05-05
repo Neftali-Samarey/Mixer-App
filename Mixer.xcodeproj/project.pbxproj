@@ -45,6 +45,8 @@
 		EDB3626E27FAA7C0000A8BE7 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3626D27FAA7C0000A8BE7 /* NavigationCoordinator.swift */; };
 		EDB3627127FAA8AD000A8BE7 /* NotificationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3627027FAA8AD000A8BE7 /* NotificationObservable.swift */; };
 		EDB3627527FAAA52000A8BE7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3627427FAAA52000A8BE7 /* MainCoordinator.swift */; };
+		EDC258DA2823908E00192C73 /* HapticFeedbackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC258D92823908E00192C73 /* HapticFeedbackCoordinator.swift */; };
+		EDC258DD2823915F00192C73 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC258DC2823915F00192C73 /* Haptic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		EDB3626D27FAA7C0000A8BE7 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		EDB3627027FAA8AD000A8BE7 /* NotificationObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObservable.swift; sourceTree = "<group>"; };
 		EDB3627427FAAA52000A8BE7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EDC258D92823908E00192C73 /* HapticFeedbackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackCoordinator.swift; sourceTree = "<group>"; };
+		EDC258DC2823915F00192C73 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +326,7 @@
 				EDB3624F27FA2063000A8BE7 /* SceneDelegate.swift */,
 				EDB3625127FA2063000A8BE7 /* ViewController.swift */,
 				ED798FB028210FCC000842F0 /* RootViewController.swift */,
+				EDC258D82823905400192C73 /* Coordinators */,
 				ED798FD82821BE75000842F0 /* Base Controllers */,
 				ED798FB528211655000842F0 /* Extensions */,
 				ED798FAC2820CDB3000842F0 /* Views */,
@@ -406,6 +411,23 @@
 				EDB3627427FAAA52000A8BE7 /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EDC258D82823905400192C73 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EDC258DB2823913900192C73 /* Haptic Feedback */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EDC258DB2823913900192C73 /* Haptic Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				EDC258D92823908E00192C73 /* HapticFeedbackCoordinator.swift */,
+				EDC258DC2823915F00192C73 /* Haptic.swift */,
+			);
+			path = "Haptic Feedback";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +558,7 @@
 				EDAA7009281B8E9900DC6A4A /* LoginFormStackView.swift in Sources */,
 				ED798FB428211402000842F0 /* ProfileViewController.swift in Sources */,
 				EDAA6FFD2818EBB900DC6A4A /* MixerOnboardingViewController.swift in Sources */,
+				EDC258DA2823908E00192C73 /* HapticFeedbackCoordinator.swift in Sources */,
 				ED798FDF2821CAF6000842F0 /* ProfileCoordinator.swift in Sources */,
 				EDB3625227FA2063000A8BE7 /* ViewController.swift in Sources */,
 				EDAA7005281B338300DC6A4A /* LoginViewController.swift in Sources */,
@@ -552,6 +575,7 @@
 				EDB3625027FA2063000A8BE7 /* SceneDelegate.swift in Sources */,
 				ED798FE32821D06D000842F0 /* ProfileViewStackView.swift in Sources */,
 				EDAA6FFA2817408D00DC6A4A /* WelcomeView.swift in Sources */,
+				EDC258DD2823915F00192C73 /* Haptic.swift in Sources */,
 				ED798FDD2821CAD4000842F0 /* ProfileViewCoordinator.swift in Sources */,
 				EDB3625827FA2063000A8BE7 /* Mixer.xcdatamodeld in Sources */,
 				EDAA6FF72815F92400DC6A4A /* OnboardingViewController.swift in Sources */,
